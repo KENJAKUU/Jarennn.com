@@ -1,0 +1,90 @@
+
+.forms_container{
+    margin-top: 200px;
+    margin-bottom: 250px;
+    
+    
+}
+
+.contact_me {
+    background-color: var(--light-blue);
+    margin: 0 var(--universal-margin);
+    border-radius: 25px;
+    padding: 100px 120px;
+    display: flex;
+}
+.forms_container h1, h3{
+    font-family: 'Radwave Demo';
+}
+.forms_heading h1{
+    font-size: clamp(1.9rem, 4.3vw, 5rem);
+    margin-bottom: 50px;
+}
+.forms_heading h3{
+    font-size: clamp(.8rem, 2vw, 1rem);
+
+}
+
+form{
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+.form_div{
+  width: 50%;
+
+}
+
+
+
+.submit_btn{
+    padding: 10px 100px;
+    cursor: pointer;
+    width: fit-content;
+    background-color: var(--blue);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: white;
+    font-size: 1rem;
+    margin-top: 50px;
+}
+.submit_btn:hover{
+    background-color: transparent;
+    border-color: var(--blue);
+    color: var(--blue);
+
+    
+}
+
+
+textarea{
+    resize: vertical;
+}
+input[type=text], input[type=email], textarea {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    background-color: transparent;
+    padding: 15px;
+    border: 1px solid black ;
+    outline: none;
+}
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    border-radius: 0px;
+    background-color: transparent;
+    outline: none;
+}
+input[type=text]:active, input[type=email]:active, textarea:active{
+    background-color: transparent;
+}
+
+
+
+
+
+.forms_heading{
+
+    box-sizing: content-box;
+    width: 50%;
+    margin-right: 25px;
+}

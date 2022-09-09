@@ -1,0 +1,52 @@
+.beta_warning{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+}
+.modal{
+    align-self: center;
+    background-color: var(--black);
+    width: 600px;
+    border: 1px solid var(--light-blue);
+    border-radius: 28px;
+    z-index: 99991;
+    padding: 50px;
+}
+.modal h1 {
+    color: var(--light-blue);
+    margin-bottom: 7px;
+}
+.modal p{
+    color: var(--light-blue);
+    margin-bottom: 70px;
+    font-size: 1.2rem;
+}
+.modal_button{
+    color: var(--black);
+    float: right;
+    padding: 5px 60px;
+    /*color: var(--blue);
+    border: 2px solid var(--blue);
+    */
+    background-color: var(--light-blue);
+    font-size: 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.modal_button:hover{
+    border: 2px solid var(--light-blue);
+    background-color: var(--black);
+    color: var(--light-blue);
+
+}
+.modal_background{
+    background-color: rgba(36, 36, 36, 0.726);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 9999;
+}

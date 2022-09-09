@@ -1,0 +1,273 @@
+
+
+:root {
+ --white:  #FFFFFF;
+ --blue: #1455FF;
+ --red: #FE3F53;
+ --dark-blue: #050B28;
+ --black: #000000;
+ --light-blue: #bbffe1;
+  --universal-margin: clamp(2rem, 4vw, 3.6rem);
+  
+ --header-h1: clamp(2.8rem, 8vw, 8rem);
+ --header-h2: clamp(1.3rem, 1.8vw , 3.5rem);
+ --header-h3: 1.2rem;
+
+
+ --article-h1: clamp(2rem, 4vw, 3.6rem);
+--about-me-image-size:  clamp(200px, 28vw, 400px);
+--article-p: clamp(.5rem, 4vw, 1.2rem);
+--right-article-container-height: calc(var(--about-me-image-size) + 70px);
+
+
+
+ --card-photo-vertical: 125px;
+ --card-photo-horizontal: 75px;
+
+ --main-text-outline: 0.01px;
+
+
+
+ --section-h1-size: clamp(2rem, 5vw, 3.9rem);
+	--ease: cubic-bezier(0,.97,.01,.99);
+	--animation-text-outline: 0.8px;
+	--section-div-height: clamp(280px, 25vw, 450px)
+
+  
+
+
+
+
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Now Text','Poppins', sans-serif;
+   }
+body{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+   ::-webkit-scrollbar {
+    width: 5px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+
+
+
+
+
+
+
+
+/* about me*/
+
+
+article{
+  padding: 100px var(--universal-margin);
+  display: flex;
+}
+.article_left_container{
+  width: 60%;
+  margin: 2.5%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: var(--right-article-container-height);
+  
+}
+.article_right_container{
+  width: 40%;
+  margin: 2.5%;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+
+
+
+/* article left contents*/
+.article_image_container{
+  
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   z-index: 1;
+
+}
+.article_image_container h1, p, a{
+  color: var(--white);
+}
+.article_image_{
+   background: url('../videos and photos/Jaren_Photo.jpg') no-repeat center;
+   background-size: cover;
+   width: var(--about-me-image-size);
+   height: var(--about-me-image-size);
+   border-radius: 50px;
+}
+.article_name_container{
+  z-index: 2;
+}
+
+.article_name_container h1{
+  font-family: 'Radwave Demo';
+  font-size: var(--article-h1);
+  color: var(--white);
+  font-weight: 500;
+  line-height: calc(var(--article-h1) - .5vh);
+}
+
+/* article left contents*/
+.article_right_container p, .article_social_medias div{
+  font-size: var(--article-p);
+}
+
+.article_social_medias{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.article_social_medias div {
+  margin-bottom: 25px;
+  padding: 6px 13px;
+  border-radius: 20px;
+  border: 1px solid var(--white);
+  text-decoration: none;
+  margin-bottom: 10px;
+  width: fit-content;
+  color: white;
+  cursor: pointer;
+  transition: transform 1s var(--ease);
+}
+
+.article_social_medias div:hover {
+
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  transform: scale(1.5);
+  
+}
+
+.article_right_container p{
+  width: 80%;
+  margin-bottom: 100px;
+  line-height: 30px;
+  
+  
+}
+
+
+
+.article_button{
+  
+  color: var(--black);
+  font-weight: 500;
+  padding: 10px 80px;
+  background-color: var(--white);
+  border-radius: 20px;
+  cursor: pointer;
+  width: fit-content;
+  border: 1px solid var(--white);
+  transition: transform 1s var(--ease);
+  font-size: 1.2rem;
+  
+}
+
+
+.article_button:hover{
+  
+  color: var(--white);
+  background-color: transparent;
+  border: 1px solid var(--white);
+  transform: scale(1.2);
+
+}
+.line{
+  border-bottom: 1px solid var(--white);
+  margin: 130px var(--universal-margin);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@supports (-moz-appearance:none) { 
+
+:root{
+   --main-text-outline: 1.2px;
+
+}
+}
+
+
+@supports ((-webkit-backdrop-filter: initial) or (backdrop-filter: initial)){
+nav{
+    -webkit-backdrop-filter: saturate(80%) blur(20px);
+    backdrop-filter: saturate(80%) blur(10px);
+}
+.glass_load {
+  -webkit-backdrop-filter: saturate(80%) blur(50px);
+  backdrop-filter: saturate(80%) blur(50px) ;
+  outline: .5px solid black;
+  opacity: .8;
+  border-radius: 17px;
+}
+
+.modal{
+  -webkit-backdrop-filter: saturate(80%) blur(90px);
+    backdrop-filter: saturate(80%) blur(10px);
+    opacity: .90;
+}
+}
+
+
+
+
+

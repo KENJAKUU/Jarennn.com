@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jaren Design</title>
+    <link rel="stylesheet" type="text/css" href="./css/Navbar.css">
+    <link rel="stylesheet" type="text/css" href="./css/Main.css">
+    <link rel="stylesheet" type="text/css" href="./css/media_queries.css">
+    <link rel="stylesheet" type="text/css" href= "./css/arrow_animation.css">
+    <link rel="stylesheet" type="text/css" href="./css/section.css">
+    <link rel="stylesheet" type="text/css" href="./css/hero_container.css">
+    <link rel="stylesheet" type="text/css" href="./Fonts/helvetica now/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./css/scroll_text_animation.css">
+    <link rel="stylesheet" type="text/css" href="./css/forms.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./css/loading_animation.css">
+    <link rel="stylesheet" type="text/css" href="./css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" defer></script>
+    <script src="./js/three.min.js"></script>
+    <script src="./js/gsap.js" defer></script>
+    <script src="./js/bg.js" defer></script>
+    <script src="./js/myFunctions.js" defer></script>
+    <script src="./js/sectionAnimation.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js" defer></script>
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body id="body_scroll">
+    <div class="loading_screen" id="loading_screen">
+    <svg class="zoom_animation" id="svg_resize" viewBox="0 0 200 200" width="400" height="400">
+      <g transform="rotate(45 -117.167 189.953)" style="animation:eVa7LY9SFEw2_tr__tr 2500ms linear infinite normal forwards">
+         <rect id="eVa7LY9SFEw2" width="97.319" height="97.319" rx="17" ry="17" transform="matrix(.97542 0 0 .97542 -47.464 -47.464)" fill="#4165F5" stroke="none" stroke-width="0"/>
+       </g>
+       <g transform="rotate(45 -86.196 177.125)" style="animation:eVa7LY9SFEw3_tr__tr 2500ms linear infinite normal forwards">
+         <rect id="eVa7LY9SFEw3" width="97.319" height="97.319" rx="17" ry="17" transform="matrix(.97542 0 0 .97542 -47.464 -47.464)" fill="#539EE2" stroke="none" stroke-width="0" class="glass_load"/>
+       </g>
+       <g transform="rotate(45 -55.225 164.296)" style="animation:eVa7LY9SFEw4_tr__tr 2500ms linear infinite normal forwards">
+         <rect id="eVa7LY9SFEw4" width="97.319" height="97.319" rx="17" ry="17" transform="matrix(.97542 0 0 .97542 -47.464 -47.464)" fill="#60C7D5" stroke="none" stroke-width="0"/>
+       </g>
+       <g transform="rotate(45 -24.254 151.468)" style="animation:eVa7LY9SFEw5_tr__tr 2500ms linear infinite normal forwards">
+         <rect id="eVa7LY9SFEw5" width="97.319" height="97.319" rx="17" ry="17" transform="matrix(.97542 0 0 .97542 -47.464 -47.464)" fill="#72FFC3" stroke="none" stroke-width="0" class="glass_load"/>
+       </g>
+     </svg>
+     <h1 style="margin-top: 50px" class="load_text">Loading</h1>
+    </div>
+
+    <div class = "beta_warning">
+      <div class = "modal_background" id="modalBg"></div>
+      <div class = "modal">
+        <i class="fas fa-hand-peace " style="color:var(--light-blue); font-size: 4rem; margin-bottom: 20px;"></i>
+
+        <h1>Hello! sorry I almost forgot</h1>
+        <p>This website is in beta version so It might have
+          some errors</p>
+        <div class="modal_button" id="modalButton">OK</div>
+      </div>
+      
+    </div>
+    </div>
+      <!-- landing page -->
+      <header>
+
+
+
+
+
+
+          
+          <! -- navigation bar -->
+          <nav>
+            <img src="./videos and photos/logo.svg" class="logo">
+            <input type="checkbox" id="click" onclick="checkBox()">
+            <label for="click" class="menu-btn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+              <li>
+                <a class="active" href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Portfolio</a>
+              </li>
+              <li>
+                <a href="#">Contact Me</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- background fade -->
+
+          <div class="background_fade" id="bg_fade"></div>
+          
+          
+          <! -- landing page contents -->
+          <div class="page_content">
+            
+            <h1 class="main_header_heading_1 fade_up_main_heading" style = "-webkit-text-stroke: 1.5px black; color: transparent; font-weight: 500; ">HEY THERE</h1>
+            <h1 class="main_header_heading_2 fade_up_main_heading">I'M JOACHIM</h1>
+            <h3 class="sub_header_heading">Graphic Designer x Programmer</h3>
+            <span>
+              <a href="blank" target="_blank">View My Works</a>
+            </span>
+          </div>
+          <div class="arrow_container">
+            <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <p class="arrow_down_text">scroll down</p>
+          </div>
+      </header>
+
+
+      
+      <article class="contents"">
+        
+
+
+        <div class="article_left_container">
+         
+         <div class="article_image_container" id="imageContainerAboutMe">
+          <div class="article_image_" id="imageAboutMe"></div>
+         </div>
+         
+         <div class="article_name_container">
+          <h1>JAREN<BR>JOACHIM<BR>FELICIANO</h1>
+        </div>
+        </div>
+
+
+
+        <div class="article_right_container">
+          <div class="article_social_medias">
+            
+            <div class ="Facebook"><span>Facebook</span></div>
+            <div class ="Instagram"><span>Instagram</span></div>
+          </div>
+          <p>I’m a programmer and designer specializing in creating brand design and social media design, experimenting with different types of graphic design styles.  </p>
+          <div class = "article_button_container">
+          <div class="article_button">Visit My Fiverr</div>
+        </div>
+        </div>
+      </article>
+      <div class="line"></div>
+
+      
+
+
+      <!-- hobbies -->
+      <section class="section">
+        <div class="section_heading">
+          <div class="heading_text_container">
+            <h1>My<br>Works</h1>
+            <p>More coming soon</p>
+          </div>
+          <div class="art_container"><h1>∗</h1></div>
+        </div>
+
+        <div class = "graphic_design_container" id="section_div_button">   
+          <h1 class = "h1_clone_up" >GRAPHIC DESIGN</h1>
+          <h1 class = "h1_clone_up" >GRAPHIC DESIGN</h1>
+          <h1 class = "original_h1">GRAPHIC DESIGN</h1>
+          <P class="section_div_button_p">VIEW PORTFOLIO</P>
+          <h1 class="h1_clone_down" >GRAPHIC DESIGN</h1>   
+          <h1 class="h1_clone_down" >GRAPHIC DESIGN</h1>
+          <div class="graphic_design_image"></div>
+          <div class="graphic_design_image_overlay"></div>
+        </div>
+
+
+        <!-- <div class = "photography_container">
+          
+
+          <h1 class = "h1_clone_up" id = "up_2">PHOTOGRAPHY</h1>
+          <h1 class = "h1_clone_up" id = "up_1">PHOTOGRAPHY</h1>
+          <h1 class = "original_h1">PHOTOGRAPHY</h1>
+          <P>VIEW PORTFOLIO</P>
+          <h1 class="h1_clone_down" id = "down_1">PHOTOGRAPHY</h1>   
+          <h1 class="h1_clone_down" id = "down_2">PHOTOGRAPHY</h1>
+          <div class="photography_image"></div>
+          <div class="photography_image_overlay"></div>
+
+          
+        </div> -->
+      
+      </section>
+      <div class="hero-marquee">
+        <div class="marquee">
+         <span class="clipped-text ai">
+          MORE CONTENTS COMING SOON
+         </span>
+         <span class="clipped-text ai">
+          MORE CONTENTS COMING SOON
+         </span>
+        </div>
+         
+        </div>
+       </div>
+       
+      <div class="forms_container">
+       <div class="contact_me">
+
+
+        <div class = "forms_heading">
+        <h3>interested?</h2>
+        <h1>Contact Me</h1>
+        </div>
+        <div class="form_div">
+        <form action="https://formsubmit.co/jarenjoachim.feliciano@gmail.com " method="POST">
+          <input id="name" type="text" name="name" placeholder="Name">
+          <input id="email" type="email" name="email" placeholder="Email">
+          <input id="subject" type="text" name="subject" placeholder="Subject">
+          <textarea id="message" rows="4" cols="50" name="comment" form="usrform" placeholder="Message"></textarea>
+          <input class="submit_btn" type="submit">
+        </form>
+        </div>
+       </div>
+      </div>
+      <footer>
+        <div class="footer_content_container">
+          <div class="column_1">
+           <div class="column_1_contents">
+            <p style="font-family:'Radwave Demo'; margin-bottom: 10px;">Jaren Designs</p>
+            <p>jarenjoachim.feliciano@gmail.com</p>
+           </div>
+          </div>
+          <div class="column_2">
+            <div class="column_2_contents">
+            <p style="font-family:'Radwave Demo'; margin-bottom: 10px;">Account Links</p>
+            <p><a>Discord</a></p>
+            <p><a>Instagram</a></p>
+            <p><a>Fiverr</a></p>
+          </div>
+          </div>
+          <div class="column_3">
+            <div class="column_3_contents">
+            <p style="font-family:'Radwave Demo';">@2022 Jaren</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+
+
+
+
+
+  
+
+     
+      <div class = "background_blur"></div>
+      <div id="canvas"></div>
+      <div class = "background_overlay"></div>
+
+
+
+
+
+
+      <script>
+  AOS.init({
+  duration: 300,
+})
+</script>
+  </body>
+
+
+</script>
+</html>

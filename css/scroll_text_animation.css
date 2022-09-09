@@ -1,0 +1,23 @@
+.hero-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .marquee {
+   font-size: 0;
+  }
+  
+  .clipped-text {
+   display: inline-block;
+   font-size: 5rem;
+   margin-right: 100px;
+  }
+  
+  .ai {
+   -webkit-text-stroke: var(--animation-text-outline) white;
+   font-family: "Radwave Demo";
+   color: transparent;
+   
+  
+  
+  }

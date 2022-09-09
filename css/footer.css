@@ -1,0 +1,19 @@
+footer{
+    width: 100%;
+    border-top: 1px solid var(--white);
+    border-radius: 50px 50px 0 0;
+
+    padding: 60px 0 0px 0;
+
+}
+.footer_content_container{
+    margin: 0 var(--universal-margin);
+    display: flex;
+    
+}
+.column_1, .column_2, .column_3 {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
